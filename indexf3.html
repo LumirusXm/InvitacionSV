@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Invitacion</title>
+        <link rel="stylesheet" href="stylef3.css">
+        <link rel="icon" href="imagenes/iconoc.png" type="image/png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    </head>
+    <body onclick="PlayAudio">
+        
+        <div class="contenedor">
+            <h1>Invitación!</h1>
+            <p class="cuadro1">
+                Sabría que dirías que sí :D. Entonces, ya sabes, el 14 de febrero, tú y yo. No faltes
+                
+            </p>
+            <h2>Te amooo! ❤️ </h2>
+
+            <!--<img class="gifr" src="imagenes/ranap.gif" alt="rann">-->
+            <img class="gifr" src="imagenes/Sticker10.png" alt="rann">
+            
+            
+            <!--<div class="botones">
+                <button onclick="location.href='indexf3.html'" class="btn btns">SI</button>
+            </div>
+            <div class="botones">
+                <button onclick="location.href='indexf2.html'" class="btn btnn">NO</button>
+            </div> -->
+            
+            <!-- <input class="botones" type="button" value="SI">
+            <input class="botones" type="button" value="NO">
+            -->
+            <audio id="music" controls autoplay loop src="imagenes/PorTi.mp3"></audio>
+            <a href="https://api.whatsapp.com/send?phone=953243867&text=Si%20Quiero%20Salir%20Contigo%20El%2014!!" target="_blank">
+                <img class="wa" src="imagenes/wa.png" alt="Enviar Mensaje al Whatsapp">
+            </a>
+            <p class="enl">Dale Click</p>
+        </div>
+        
+        <script>
+            function PlayAudio(){
+                document.getElementById("music").play();
+            }
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.1/dist/confetti.browser.min.js"></script>
+        <script>
+            setInterval(() => {
+                confetti({
+                    particleCount: 150,
+                    spread: 120,
+                    origin: { x: 0.5, y: 0.5 }
+                });
+            }, 2000); 
+        </script>
+    </body>
+
+
+
+</html> 
